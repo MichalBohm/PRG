@@ -1,12 +1,21 @@
-print("Jsi v místnosti. Můžeš jít dál všemi 4-mi směry. Proč? Protože chceš poklad. To dá rozum ne?")
+import random
+jmeno=input("vaše jméno, musíte být kluk, nechtělo se mi zkloňovat pro holku ")
+print(f"""Byl náš hrdina {jmeno}. Chtěl zachránit svoji rodinu od chudoby, jelikož jeho rodina byla vládcem celé země než je zradili jejich nejbližší přátelé. Teď {jmeno} žije na vesnici zvané Brno a už ho to nebavý 'Už mě to fakt ser- štve.' řekl si 
+      náš hrdina. 'Kdybych mohl něják alespoň nás dostat z chudoby,' v tu chvíli si všiml na tržišti pěkné kašny, ale vedle ní seděl nějáký podivně oblečený blud,
+       který povídá: 'Zaslechl Jsem tě a myslím si že mám to co potřebuješ,' ukázal na mapu pokladu. {jmeno} byl trochu zmatený: 'Proč mě posloucháš bezďáku?' 'Co si to dovoluješ holomku,' odvětil, 'chci ti jen pomoci.'
+       {jmeno} tomu moc nechtěl věřit, ale co mu zbývalo. Zaplatil za plánek a lokaci, kde ho využít a šel. Na místě nic nebylo, ale v tu ránu se propadl pod zem... 'kur vajíčka snaší, kde to sem,' řekl {jmeno}. 'Jsi v místnosti. Můžeš jít dál všemi 4-mi směry. Proč? Protože chceš poklad. To dá rozum ne?' řekl
+       hlas v hlavě.""")
+seznam=["ja zabiju toho bezďáka","Si ze mě dělá blázny pouliční štamgast", 'přetrhnu mu vaz', 'Fuj na bezdomovce proč si prostě nekoupí dům', 'Celkem zima tady','Jak se asi má rodina, doufám že dobře','hmm proč si vůbec mluvím pro sebe','zbláznil jsem se?','ty hlasy v hlavě jsou hlasité']
 print("1) Jdi na sever")
 print("2) Jdi na jih")
 print("3) Jdi na východ")
 print("4) Jdi na západ")
 mistnost3=""
-smer=input("Zadej volbu:")
+smer=input("Zadej volbu (sever,jih,východ,západ a u místnostech a,b,c,d):")
 while mistnost3!="b":
     if smer=="sever":
+        hlaska= random.choice(seznam)
+        print(hlaska)
         print("Šel jsi na sever a vešel jsi do místnosti se třemi dveřmi")
         print("a) Jdi do prvních dveří")
         print("b) Jdi do druhých dveří")
@@ -31,6 +40,8 @@ while mistnost3!="b":
             print("Chyba vstupu")
 
     if smer=="jih":
+        hlaska= random.choice(seznam)
+        print(hlaska)
         print("Šel jsi na jih a vešel jsi do místnosti se třemi dveřmi")
         print("a) Jdi do prvních dveří")
         print("b) Jdi do druhých dveří")
@@ -55,6 +66,8 @@ while mistnost3!="b":
             print("Chyba vstupu")
 
     if smer=="východ":
+        hlaska= random.choice(seznam)
+        print(hlaska)
         print("Šel jsi na západ a vešel jsi do místnosti se třemi dveřmi")
         print("a) Jdi do prvních dveří")
         print("b) Jdi do druhých dveří")
@@ -79,6 +92,8 @@ while mistnost3!="b":
             print("Chyba vstupu")
 
     if smer=="západ":
+        hlaska= random.choice(seznam)
+        print(hlaska)
         print("Šel jsi na východ a vešel jsi do místnosti se třemi dveřmi")
         print("a) Jdi do prvních dveří")
         print("b) Jdi do druhých dveří")
@@ -102,8 +117,11 @@ while mistnost3!="b":
         else:
             print("Chyba vstupu")
 
-print("Vyhrál si... Co přesně? Jak to mám vědět. Ale vrátil si se domů za svojí rodinou změněný touhle výpravou, nikdy nebudeš stejný.")
-print("""    ⠀         ⣰⣷⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+print("Vyhrál si... Co přesně? Jak to mám vědět. Ale vrátil si se domů za svojí rodinou a máš penízky. Rodina neví jak ti poděkovat a oslavuje tě. Ty příjdeš za bezdomovcem a můžeš ho zmlátit nebo mu poděkovat.")
+stamgast=input("zmlátit nebo poděkovat (a nebo b)")
+if stamgast=="a":
+    print("zasáhl tě blesk. konec :P")
+    print("""    ⠀         ⣰⣷⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
     ⠀⠀⠀⠀⠀⠀⠀⣀⣶⣿⣿⣿⣿⣿⣿⣷⣶⣶⣶⣦⣀⡀⠀⢀⣴⣇⠀⠀⠀⠀
     ⠀⠀⠀⠀⠀⢠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀
     ⠀⠀⠀⠀⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀
@@ -112,3 +130,6 @@ print("""    ⠀         ⣰⣷⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀�
     ⠀⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄
     ⢸⣿⣿⣿⣿⠟⠋⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠁⣿⣿⣿⣿⡿⠛⠉⠉⠉⠉⠁
     ⠘⠛⠛⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠛⠛⠛⠃⠀⠀⠀⠀⠀⠀⠀""")
+elif stamgast=="b":
+    print("Bezdomovec se usměje a pogratuluje ti. Ty si najdeš krásnou ženu a žiješ štastně až do smrti. Konec")
+
