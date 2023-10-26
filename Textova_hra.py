@@ -28,7 +28,7 @@ while mistnost3!="b":
             print("4) Jdi na východ") 
             smer=input("Zadej volbu:")
         else:
-            print("Chyba vstupu, spusťte hru znovu")
+            print("Chyba vstupu")
 
     if smer=="jih":
         print("Šel jsi na jih a vešel jsi do místnosti se třemi dveřmi")
@@ -52,7 +52,7 @@ while mistnost3!="b":
             print("4) Jdi na východ") 
             smer=input("Zadej volbu:")
         else:
-            print("Chyba vstupu, spusťte hru znovu")
+            print("Chyba vstupu")
 
     if smer=="východ":
         print("Šel jsi na západ a vešel jsi do místnosti se třemi dveřmi")
@@ -76,7 +76,7 @@ while mistnost3!="b":
             print("4) Jdi na východ") 
             smer=input("Zadej volbu:")
         else:
-            print("Chyba vstupu, spusťte hru znovu")
+            print("Chyba vstupu")
 
     if smer=="západ":
         print("Šel jsi na východ a vešel jsi do místnosti se třemi dveřmi")
@@ -100,7 +100,7 @@ while mistnost3!="b":
             print("4) Jdi na východ") 
             smer=input("Zadej volbu:")
         else:
-            print("Chyba vstupu, spusťte hru znovu")
+            print("Chyba vstupu")
 
 print("Vyhrál si... Co přesně? Jak to mám vědět. Ale vrátil si se domů za svojí rodinou změněný touhle výpravou, nikdy nebudeš stejný.")
 print("""    ⠀         ⣰⣷⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
