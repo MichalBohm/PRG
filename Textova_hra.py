@@ -132,4 +132,6 @@ if stamgast=="a":
     ⠘⠛⠛⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠛⠛⠛⠃⠀⠀⠀⠀⠀⠀⠀""")
 elif stamgast=="b":
     print("Bezdomovec se usměje a pogratuluje ti. Ty si najdeš krásnou ženu a žiješ štastně až do smrti. Konec")
-
+else:
+    print("si kokot?")
+    stamgast=input("zmlátit nebo poděkovat (a nebo b)")
